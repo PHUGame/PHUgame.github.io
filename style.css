@@ -32,6 +32,10 @@ nav .logo{
     width: 4vw;
 }
 
+nav .logo:hover{
+    width: 4.2vw;
+}
+
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -137,4 +141,9 @@ margin-bottom: 0;
 
 body {
     background-color: rgba(0, 0, 0, 0.966);
+}
+
+.button {
+    background-color: transparent;
+    border-color: transparent;
 }

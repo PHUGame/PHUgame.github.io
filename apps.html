@@ -9,12 +9,14 @@
 </head>
 
 <body>
-    <div class="hero">
-
-        <video autoplay loop muted plays-inline class="back-video">
-        <source src="videos/background-video1.mp4" type="video/mp4"></video>
-    <nav>
-        <img src="images/logo.png" class="logo">
+    <div class="hero">  
+        <video id="back-video" autoplay loop muted plays-inline class="back-video">  
+          <source src="videos/background-video1.mp4" type="video/mp4">  
+        </video>  
+        <nav>  
+          <button class="button" onclick="changeVideo()">  
+             <img src="images/logo.png" class="logo">  
+          </button>  
         <Div class="content">
             <h1>Palm Harbor Apps</h1>
         </Div>
@@ -26,7 +28,18 @@
             <li><a href="info.html">Information</a></li>
         </ul>
     </nav>
-    <iframe class="iframe" float:="center" src="apps1.html" width= "95%" height= "90%"></iframe>
+    <iframe class="iframe" id="iframe" float:="center" src="apps1.html" width= "95%" height= "90%"></iframe>
 </Div>
+<script>  
+    function changeVideo() {   
+      var video = document.getElementById("back-video");   
+      video.src = "videos/easteregg.mp4";   
+      video.muted = false;   
+      video.play();
+      
+      var iframe = document.getElementById("iframe");  
+      iframe.style.display = "none";  
+    }  
+ </script>
 </body>
 </html>

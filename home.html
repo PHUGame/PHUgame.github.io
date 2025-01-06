@@ -1,35 +1,45 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Palm Harbor Games</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/icon" href="Images/logo.png">
-</head>
-
-<body>
-    <div class="hero">
-
-        <video autoplay loop muted plays-inline class="back-video">
-        <source src="videos/background-video1.mp4" type="video/mp4"></video>
-    <nav>
-        <img src="images/logo.png" class="logo">
-        <Div class="content">
-        </Div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="index.html">Games</a></li>
-            <li><a href="apps.html">Apps</a></li> 
-            <li><a href="chat.html">Discord</a></li> 
-            <li><a href="info.html">Information</a></li>
-        </ul>
-    </nav>
-    <Div class="content">
-        <h2>Palm Harbor Games</h1>
-        <a href="index.html">Pick Your Poison</a>
-
-    </Div>
-</Div>
-</body>
+<!DOCTYPE html>  
+<html>  
+  
+<head>  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <title>Palm Harbor Games</title>  
+   <link rel="stylesheet" href="style.css">  
+   <link rel="icon" type="image/icon" href="Images/logo.png">  
+</head>  
+  
+<body>  
+   <div class="hero">  
+      <video id="back-video" autoplay loop muted plays-inline class="back-video">  
+        <source src="videos/background-video1.mp4" type="video/mp4">  
+      </video>  
+      <nav>  
+        <button class="button" onclick="changeVideo()">  
+           <img src="images/logo.png" class="logo">  
+        </button>  
+        <ul>  
+           <li><a href="home.html">Home</a></li>  
+           <li><a href="index.html">Games</a></li>  
+           <li><a href="apps.html">Apps</a></li>  
+           <li><a href="chat.html">Discord</a></li>  
+           <li><a href="info.html">Information</a></li>  
+        </ul>  
+      </nav>  
+      <div class="content">  
+        <h2>Palm Harbor Games</h2>  
+        <a href="index.html">Pick Your Poison</a>  
+      </div>  
+   </div>  
+   <script>  
+      function changeVideo() {   
+        var video = document.getElementById("back-video");   
+        video.src = "videos/easteregg.mp4";   
+        video.muted = false;   
+        video.play();
+        
+        var iframe = document.getElementById("myIframe");  
+        iframe.style.display = "none";  
+      }  
+   </script>  
+</body>  
 </html>
