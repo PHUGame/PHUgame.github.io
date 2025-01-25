@@ -31,15 +31,18 @@
     <widgetbot  id="iframe" server="1147267551039062119" channel="1147268090506252308"  width="8%" height="80%" style=" overflow: hidden; background-color: rgba(0, 0, 0, 0); border-radius: 8px 8px 0 0; vertical-align: top; width: 85%; height: 95%;"><iframe title="WidgetBot Discord chat embed" allow="clipboard-write; fullscreen" src="https://e.widgetbot.io/channels/1147267551039062119/1147268090506252308?api=6d428098-09a1-4ef8-a956-01dd9fa2113c" style="border: none; width: 100%; height: 92%;"></iframe></widgetbot>
 </Div>
 <script>  
-    function changeVideo() {   
+  function changeVideo() {   
       var video = document.getElementById("back-video");   
-      video.src = "videos/easteregg.mp4";   
-      video.muted = false;   
+      var videos = ["videos/easteregg1.mp4", "videos/easteregg2.mp4", "videos/easteregg3.mp4"];
+      var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      video.src = randomVideo;
+      video.muted = false;
+      video.volume = 0.2;
       video.play();
-      
+  
       var iframe = document.getElementById("iframe");  
       iframe.style.display = "none";  
-    }  
- </script>
+    }
+</script>  
 </body>
 </html>

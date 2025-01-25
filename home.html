@@ -32,14 +32,17 @@
    </div>  
    <script>  
       function changeVideo() {   
-        var video = document.getElementById("back-video");   
-        video.src = "videos/easteregg.mp4";   
-        video.muted = false;   
-        video.play();
-        
-        var iframe = document.getElementById("myIframe");  
-        iframe.style.display = "none";  
-      }  
-   </script>  
+          var video = document.getElementById("back-video");   
+          var videos = ["videos/easteregg1.mp4", "videos/easteregg2.mp4", "videos/easteregg3.mp4"];
+          var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+          video.src = randomVideo;
+          video.muted = false;
+          video.volume = 0.2;
+          video.play();
+      
+          var iframe = document.getElementById("iframe");  
+          iframe.style.display = "none";  
+        }
+    </script>  
 </body>  
 </html>
