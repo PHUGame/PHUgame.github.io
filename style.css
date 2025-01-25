@@ -29,11 +29,11 @@ nav{
     background-image: linear-gradient( rgba(15, 15, 15, 0.705), rgba(77, 77, 77, 0));
 }
 nav .logo{
-    width: 4vw;
+    width: 3.5vw;
 }
 
 nav .logo:hover{
-    width: 4.2vw;
+    width: 3.6vw;
 }
 
 nav ul li{
@@ -59,7 +59,7 @@ nav ul li a:hover{
 }
 
 .content h1{
-    font-size: 4vw;
+    font-size: 3.6vw;
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
